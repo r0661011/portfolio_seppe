@@ -23,44 +23,69 @@
     <link rel="stylesheet" href="css/fancybox.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            const toggle = document.querySelector(".toggle");
+                    const toggleBtn = document.querySelector(".toggle-btn");
+                    const menu = document.querySelector(".menu");
+                    const menuList = document.querySelector(".menu-list");
+                    const menuItems = document.querySelectorAll(".menu-item");
+
+                    let showMenu = false;
+
+                    toggle.addEventListener("click", toggleMenu);
+
+                    function toggleMenu() {
+                        if (!showMenu) {
+                            toggleBtn.classList.add("open");
+                            menu.classList.add("open");
+                            menuList.classList.add("open");
+                            menuItems.forEach(item => item.classList.add("open"));
+
+                            showMenu = true;
+                        } else {
+                            toggleBtn.classList.remove("open");
+                            menu.classList.remove("open");
+                            menuList.classList.remove("open");
+                            menuItems.forEach(item => item.classList.remove("open"));
+
+                            showMenu = false;
+                        }
+                    }
+        });
+    </script>
     
   </head>
   <body>
   
-
-  <div class="site-wrap">
-
-  <div class="site-mobile-menu">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close mt-3">
-        <span class="icon-close2 js-menu-toggle"></span>
-      </div>
-    </div>
-    <div class="site-mobile-menu-body"></div>
-  </div>
-
-  <header class="header-bar d-flex d-lg-flex align-items-center inner-page-header" data-aos="fade-down">
-    <div class="site-logo">
-      <a href="index.html">Seppe Vancraywinkel - Portfolio</a>
-    </div>
-    
-    <div class="d-inline-block d-xl-block ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span> <span style="position: relative;top: -4px; text-transform: uppercase;">Menu</span></a></div>
-
-    <div class="main-menu d-none">
-      <ul class="js-clone-nav">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="photos.html">Photos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <ul class="social js-clone-nav">
-        <li><a href="#"><span class="icon-facebook"></span></a></li>
-        <li><a href="#"><span class="icon-twitter"></span></a></li>
-        <li><a href="#"><span class="icon-instagram"></span></a></li>
-      </ul>
-    </div>
-  </header> 
-  
+<header class="header" style="background-color: white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="brand">
+                    <h1>Seppe Vancraywinkel</h1>
+                </div>
+                <div class="toggle">
+                    <span class="toggle-btn"></span>
+                </div>
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="index.html" class="menu-link">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="photos.html" class="menu-link">Photos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contact.html" class="menu-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
   <main class="main-content">
     <div class="container-fluid photos">
