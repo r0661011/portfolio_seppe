@@ -4,7 +4,7 @@
 <head>
     <title>Seppe Vancraywinkel - Portfolio - Home</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=500, user-scalable = no ">
+    <meta name="viewport" content="width=500, user-scalable = no">
     <meta name="Description" content="Seppe Vancraywinkel, master student photography LUCA School of Arts Sint-Lukas, photography portfolio home page.">
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
@@ -24,48 +24,48 @@
     <link rel="stylesheet" href="css/jquery.scrollbar.css">
     <link rel="stylesheet" href="css/fancybox.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
-        <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "name": "Seppe Vancraywinkel",
-  "url": "https://www.seppevancraywinkel.com",
-  "email": "vancraywinkel.seppe@gmail.com",
-  "logo": "https://www.seppevancraywinkel.com/images/logo.jpg"
-}
-</script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Seppe Vancraywinkel",
+            "url": "https://www.seppevancraywinkel.com",
+            "email": "vancraywinkel.seppe@gmail.com",
+            "logo": "https://www.seppevancraywinkel.com/images/logo.jpg"
+        }
+    </script>
     <script type="text/javascript">
-        $( document ).ready(function() {
+        $(document).ready(function() {
             const toggle = document.querySelector(".toggle");
-                    const toggleBtn = document.querySelector(".toggle-btn");
-                    const menu = document.querySelector(".menu");
-                    const menuList = document.querySelector(".menu-list");
-                    const menuItems = document.querySelectorAll(".menu-item");
+            const toggleBtn = document.querySelector(".toggle-btn");
+            const menu = document.querySelector(".menu");
+            const menuList = document.querySelector(".menu-list");
+            const menuItems = document.querySelectorAll(".menu-item");
 
-                    let showMenu = false;
+            let showMenu = false;
 
-                    toggle.addEventListener("click", toggleMenu);
+            toggle.addEventListener("click", toggleMenu);
 
-                    function toggleMenu() {
-                        if (!showMenu) {
-                            toggleBtn.classList.add("open");
-                            menu.classList.add("open");
-                            menuList.classList.add("open");
-                            menuItems.forEach(item => item.classList.add("open"));
+            function toggleMenu() {
+                if (!showMenu) {
+                    toggleBtn.classList.add("open");
+                    menu.classList.add("open");
+                    menuList.classList.add("open");
+                    menuItems.forEach(item => item.classList.add("open"));
 
-                            showMenu = true;
-                        } else {
-                            toggleBtn.classList.remove("open");
-                            menu.classList.remove("open");
-                            menuList.classList.remove("open");
-                            menuItems.forEach(item => item.classList.remove("open"));
+                    showMenu = true;
+                } else {
+                    toggleBtn.classList.remove("open");
+                    menu.classList.remove("open");
+                    menuList.classList.remove("open");
+                    menuItems.forEach(item => item.classList.remove("open"));
 
-                            showMenu = false;
-                        }
-                    }
+                    showMenu = false;
+                }
+            }
         });
     </script>
 
@@ -76,7 +76,7 @@
 
 
 
-<header class="header" style="background-color: white">
+    <header class="header" style="background-color: white">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <div class="brand">
@@ -196,8 +196,7 @@
             <div class="swiper-slide cover" style="background-image:url(images/final/Vancraywinkel_Seppe_9.jpg)"></div>
         </div>
     </div>
-
-    </div> <!-- .site-wrap -->
+ <!-- .site-wrap -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
