@@ -29,12 +29,18 @@ body {
 	padding: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
 .header .navbar .toggle {
 	position: absolute;
 	width: 2rem;
 	height: 1.4rem;
 	top: 2rem;
-	right: 4rem;
+	right: 0.5rem;
 	z-index: 2;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
@@ -158,8 +164,8 @@ body {
 
 .header .navbar .brand {
 	font-family: inherit;
-	font-size: 1.5rem;
-	font-weight: 500;
+	font-size: 1rem;
+	font-weight: 200;
 	line-height: inherit;
 	color: #212121;
 	text-transform: uppercase;
@@ -384,7 +390,7 @@ h1, h2, h3, h4, h5,
     .bg-image.overlay:after {
       position: absolute;
       content: "";
-      top: 0;
+      top: 10rem;
       left: 0;
       right: 0;
       bottom: 0;
